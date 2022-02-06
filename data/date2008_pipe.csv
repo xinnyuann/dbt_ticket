@@ -1,3 +1,4 @@
+dateid,caldate,day,week,month,qtr,year,holiday
 1827,2008-01-01,WE,1,JAN,1,2008,True
 1828,2008-01-02,TH,1,JAN,1,2008,False
 1829,2008-01-03,FR,1,JAN,1,2008,False
