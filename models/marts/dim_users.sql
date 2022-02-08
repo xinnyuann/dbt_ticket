@@ -6,13 +6,10 @@ with users as(
 ),
 
 sales as (
-
     select * from {{ ref('fct_sales') }}
-
 ),
 
 buyer_sales as (
-
     select
         buyerid as userid,
         min(saledate) as first_order_date,
@@ -26,7 +23,6 @@ buyer_sales as (
 ),
 
 seller_sales as (
-
     select
         sellerid as userid,
         min(saledate) as first_sale_date,
@@ -45,7 +41,6 @@ final as (
     from users
     left join buyer_sales using (userid)
     left join seller_sales using (userid)
-
 )
   
 select * from final
